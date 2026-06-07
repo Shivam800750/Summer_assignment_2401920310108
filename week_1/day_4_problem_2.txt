@@ -1,4 +1,24 @@
 Roll No: 2401920310108
 Week 1 - Day 4
-Problem 2
+Problem 2 - Reshape the Matrix
 
+Example:
+Input: mat = [[1,2],[3,4]], r = 1, c = 4
+Output: [[1,2,3,4]]
+
+class Solution:
+    def matrixReshape(self, mat: List[List[int]], r: int, c: int) -> List[List[int]]:
+        m, n = len(mat), len(mat[0])
+        
+        # If total elements don't match, return original matrix
+        if m * n != r * c:
+            return mat
+        
+        # Flatten the matrix into a single list
+        flat = [num for row in mat for num in row]
+        
+        # Reshape into r x c matrix
+        return [flat[i * c:(i + 1) * c] for i in range(r)]
+
+Time Complexity: O(m * n)
+Space Complexity: O(m * n)
