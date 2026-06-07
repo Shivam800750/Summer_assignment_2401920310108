@@ -1,32 +1,12 @@
 Roll No: 2401920310108
 Week 1 - Day 2
 
-Problem 1: Maximum Subarray (LeetCode #53)
-Submission ID: 2025160501
+Solutions for Day 2 have been separated into individual files:
 
-Python Solution:
+1. day_2_problem1.txt - Maximum Subarray (LeetCode #53)
+   Submission ID: 2025160501
 
-class Solution:
-    def maxSubArray(self, nums: List[int]) -> int:
-        max_sum = nums[0]
-        current_sum = nums[0]
-        for num in nums[1:]:
-            current_sum = max(num, current_sum + num)
-            max_sum = max(max_sum, current_sum)
-        return max_sum
+2. day_2_problem2.txt - Contains Duplicate (LeetCode #217)
+   Submission ID: 2025166795
 
-Problem 2: Contains Duplicate (LeetCode #217)
-Submission ID: 2025166795
-
-Python Solution:
-
-class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-        return len(nums) != len(set(nums))
-
-Problem 3: [Add your third problem here]
-Submission ID: [Add submission ID]
-
-Python Solution:
-
-[Add your solution code here]
+Please refer to the respective files for the complete solutions.
