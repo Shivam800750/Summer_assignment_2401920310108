@@ -1,4 +1,29 @@
 Roll No: 2401920310108
 Week 1 - Day 5
-Problem 1
+Problem 1 - Valid Palindrome
 
+Example:
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        left, right = 0, len(s) - 1
+        
+        while left < right:
+            # Move to next alphanumeric character from the left
+            while left < right and not s[left].isalnum():
+                left += 1
+            # Move to previous alphanumeric character from the right
+            while left < right and not s[right].isalnum():
+                right -= 1
+            # Compare lowercase versions
+            if s[left].lower() != s[right].lower():
+                return False
+            left += 1
+            right -= 1
+        
+        return True
+
+Time Complexity: O(n)
+Space Complexity: O(1)
