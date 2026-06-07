@@ -1,7 +1,7 @@
 Roll No: 2401920310108
 Week 1 - Day 2
 
-LeetCode Problem: Maximum Subarray (Problem #53)
+Problem 1: Maximum Subarray (LeetCode #53)
 Submission ID: 2025160501
 
 Python Solution:
@@ -15,7 +15,7 @@ class Solution:
             max_sum = max(max_sum, current_sum)
         return max_sum
 
-LeetCode Problem: Contains Duplicate (Problem #217)
+Problem 2: Contains Duplicate (LeetCode #217)
 Submission ID: 2025166795
 
 Python Solution:
@@ -23,3 +23,10 @@ Python Solution:
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         return len(nums) != len(set(nums))
+
+Problem 3: [Add your third problem here]
+Submission ID: [Add submission ID]
+
+Python Solution:
+
+[Add your solution code here]
