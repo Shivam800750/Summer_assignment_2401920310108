@@ -15,11 +15,11 @@ class Solution:
             max_sum = max(max_sum, current_sum)
         return max_sum
 
-Explanation:
-- Dynamic programming approach to find the maximum sum of a contiguous subarray
-- We maintain two variables:
-  1. max_sum: The maximum sum found so far
-  2. current_sum: The maximum sum ending at the current position
-- At each step, we decide whether to add the current number to the existing sum or start a new subarray
-- Time Complexity: O(n)
-- Space Complexity: O(1)
+LeetCode Problem: Contains Duplicate (Problem #217)
+Submission ID: 2025166795
+
+Python Solution:
+
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        return len(nums) != len(set(nums))
